@@ -15,11 +15,10 @@ int main(int argc, char *argv[])
     unsigned int echoLen;            /* Length of string to echo */
     int bytesRcvd, totalBytesRcvd;   /* Bytes read in single recv()
                                         and total bytes read */
-    int number_of_readers;
 
     if (argc != 3) /* Test for correct number of arguments */
     {
-        fprintf(stderr, "Usage: %s <Server IP> <Echo Word> [<Echo Port>]\n",
+        fprintf(stderr, "Usage: %s <Server IP> [<Echo Port>]\n",
                 argv[0]);
         exit(1);
     }

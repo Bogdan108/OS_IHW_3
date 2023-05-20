@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     // проверка входных данных
     if (argc != 3)
     {
-        fprintf(stderr, "Usage:  %s <Server Port>\n", argv[0]);
+        fprintf(stderr, "Usage:  %s <Server IP> <Server Port>\n", argv[0]);
         exit(1);
     }
 
